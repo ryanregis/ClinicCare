@@ -48,7 +48,7 @@ submitRegForm = () => {
         return false;
     }
     let confirmation =  confirm("All inputs will be saved. \nThis action will redirect you back to the login page. \n\nDo you want to submit?");
-    alert("Patient Registration Form Submitted. \n\nGoing back to login page.");
+    if(confirmation) alert("Patient Registration Form Submitted. \n\nGoing back to login page.");
     return confirmation;
 }
 
