@@ -25,7 +25,8 @@
         <h2 class="display-3 text-light text-center bg-primary">Clinic Care System</h2>
     </header>
 
-    <main class="p-sm-0 p-md-5 m-sm-0 m-md-2 bg-dark border border-5 border-dark">
+    <main id="patientRegForm" class="p-sm-0 p-md-5 m-sm-0 m-md-2 mb-5 pb-5 bg-dark border border-5 border-dark">
+        
         <div class="text-white d-flex justify-content-between align-items-center">
             <h3 class="display-6 fs-2 fw-bold">Patient Registration Form</h3>
             <a href="./index.html" type="button" class="btn btn-info text-white fs-4 d-flex justify-content-center">Log
@@ -49,7 +50,7 @@
                 <div class="m-2">
                     <label for="lastName" class="form-label text-primary">Last Name <span
                             class="text-danger align-middle">*</span></label><br>
-                    <input type="text" name="firstName" id="firstName" class="form-control" required>
+                    <input type="text" name="lastName" id="lastName" class="form-control" required>
                 </div>
             </div>
             <div class="m-4">
@@ -59,9 +60,9 @@
             </div>
             <div class=" d-flex flex-wrap justify-content-between align-items-center m-4">
                 <div class="m-sm-0 m-2">
-                    <label for="bDate" class="form-label text-primary">Birthdate <span
+                    <label for="birthDate" class="form-label text-primary">Birthdate <span
                             class="text-danger align-middle">*</span></label><br>
-                    <input type="date" name="bDate" id="bDate" class="form-control w-100" value="2000-01-01"
+                    <input type="date" name="birthDate" id="birthDate" class="form-control w-100" value="2000-01-01"
                         min="1850-01-01" max="2021-10-17" required>
                 </div>
                 <div class="m-sm-0 m-2">
@@ -72,9 +73,9 @@
                 <div class="m-2 d-flex flex-wrap justify-content-between">
                     <label for="gender" class="form-label text-primary">Gender <span
                             class="text-danger align-middle">*</span></label>&ensp;
-                    <input type="radio" name="gender" id="maleGender" class="form-check" required>
+                    <input type="radio" name="gender" id="maleGender" value="Male" class="form-check" required>
                     <label for="maleGender">Male</label>&ensp;
-                    <input type="radio" name="gender" id="femaleGender" class="form-check">
+                    <input type="radio" name="gender" id="femaleGender" value="Female" class="form-check">
                     <label for="femaleGender">Female</label>&ensp;
                 </div>
             </div><hr>
@@ -118,14 +119,14 @@
                     </select>
                 </div>
                 <div class="m-2">
-                    <label for="medications" class="form-label text-primary">Are you currently taking
+                    <label for="meds" class="form-label text-primary">Are you currently taking
                         medications?<br><span class="fs-7 fst-italic">(If yes, please provide what medications you're
                             taking.)</span></label><br>
-                    <input type="radio" name="medications" value="yes">
+                    <input type="radio" name="meds" value="yes">
                     <label for="yes">Yes</label><br>
-                    <input type="radio" name="medications" value="no">
+                    <input type="radio" name="meds" value="no">
                     <label for="no">No</label><br>
-                    <input type="text" class="form-control" id="medsText" disabled>
+                    <input type="text" class="form-control" name="medications" id="medsText" disabled>
                 </div>
             </div>
             <div class="m-4 d-flex flex-nowrap flex-sm-wrap justify-content-center">
